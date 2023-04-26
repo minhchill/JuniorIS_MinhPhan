@@ -1,12 +1,14 @@
-class Spring extends VerletSpring2D {
 
-    constructor(a, b) {
-      super(a, b, w, 1);
-    }
-    
-    display() {
-      stroke(255);
-      strokeWeight(2);
-      line(this.a.x, this.a.y, this.b.x, this.b.y);
-    } 
+class Spring extends VerletSpring2D {
+  constructor(a, b, strength) {
+    let length = dist(a.x, a.y, b.x, b.y);
+    super(a, b, length * 1, 0.001);
+    physics.addSpring(this);
   }
+
+  show() {
+    strokeWeight(1);
+    stroke(0, 127);
+    line(this.a.x, this.a.y, this.b.x, this.b.y);
+  }
+}

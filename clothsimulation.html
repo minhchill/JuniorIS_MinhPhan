@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheets/clothsimulation.css">
+    <title>Cloth Simulation</title>
+    <script src="Components/header.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <!-- <header-component></header-component> -->
+
+    <section class="simulation-sandbox">
+        <div id="options">
+            <div>
+                <label for="spacing">Spacing</label>
+                <input type="range" id="spacing" min="1" max="12" step="1" value="7" oninput="resetSpacing(this,this.value)">
+            </div>
+            <div>
+                <label for="cols">No. of Columns</label>
+                <input type="range" id="cols" min="20" max="76" step="1" value="65" oninput="resetCols(this,this.value)">
+            </div>
+            <div>
+                <label for="rows">No. of rows</label>
+                <input type="range" id="rows" min="20" max="60" step="1" value="40" oninput="resetRows(this,this.value)">
+            </div>
+            <div>
+                <button id="changeCloth">Change</button>
+            </div>
+        </div>
+
+        <div id="actions">
+            <div>
+                <input type="radio", name="Action", id="tear", checked>
+                <label for="tear">Tear</label>
+            </div>
+            <div>
+                <input type="radio", name="Action", id="drag">
+                <label for="drag">Drag</label>
+            </div>
+            <div>
+                <input type="radio", name="Action", id="move">
+                <label for="move">Move pinned points 🔴</label>
+            </div>
+            <div>   
+                <input type="radio", name="Action", id="add">
+                <label for="add">Pin points</label>
+            </div>
+            <div>   
+                <input type="radio", name="Action", id="remove">
+                <label for="remove">Unpin points</label>
+            </div>
+
+        </div>
+
+        <div id="canvas_container">
+            <canvas id="canvas"></canvas>
+        </div>
+    </section>
+    <!-- <script src="Sketches/cloth1.js"></script>  -->
+    <script src="Sketches/cloth2.js"></script> 
+    <script src="Sketches/events.js"></script> 
+
+</body>
+</html>

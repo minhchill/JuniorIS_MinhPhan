@@ -20,8 +20,11 @@ function keyPressed() {
   }
 }
 
+var w = window.innerWidth;
+var h = window.innerHeight; 
+
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(w, h);
 
   physics = new VerletPhysics2D();
 

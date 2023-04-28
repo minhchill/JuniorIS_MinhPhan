@@ -20,9 +20,9 @@ class Header extends HTMLElement {
           </nav> 
           <nav class="navigation">
               <a href="#" class="active">Home</a>
-              <a href="clothsimulation.html">Cloth Simulation</a>
-              <a href="about.html">About</a>
-              <a href="">Source Code</a>
+              <a href="clothsimulation_noninteractive.html">Simulation 1</a>
+              <a href="clothsimulation.html">Simulation 2</a>
+              <a href="https://github.com/minhchill/MuseumOfBanhMi.git">Source Code</a>
           </nav>
         </header>
       `;

@@ -96,7 +96,6 @@ window.onload = function(){
         }
         
     });
-
     document.body.addEventListener("mouseup",function(event){
         if(RBtear.checked){
             tearing = false;

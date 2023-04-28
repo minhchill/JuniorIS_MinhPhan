@@ -101,8 +101,6 @@ function resetRows(ele, value){
     generateSticks(rows,cols,space);
     pinPoints();
 }
-
-
 function updatePoints(){
     for(let i = 0; i < points.length; i++){
         let p = points[i];
@@ -171,8 +169,6 @@ function updateSticks(){
         }
     }
 }
-
-
 function renderPoints(){
     for(let i = 0; i < points.length; i++){
         let p = points[i];
@@ -196,8 +192,6 @@ function renderSticks(){
     ctx.strokeWidth = 0.1;
     ctx.stroke();
 }
-    
-
 function generatePoints(rows, cols, value){
     let initial_x = (width - (cols*space))/2,
         initial_y = 20;

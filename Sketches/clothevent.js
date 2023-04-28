@@ -10,7 +10,6 @@ window.onload = function(){
         x:0,
         y:0
     }
-
     document.body.addEventListener("mousedown",function(event){
         if(RBtear.checked){
             tearing = true;
@@ -97,6 +96,7 @@ window.onload = function(){
         }
         
     });
+
     document.body.addEventListener("mouseup",function(event){
         if(RBtear.checked){
             tearing = false;

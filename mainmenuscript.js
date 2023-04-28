@@ -1,4 +1,5 @@
 let text = document.getElementById('text');
+let text2 = document.getElementById('text2');
 let leaf = document.getElementById('leaf');
 let hill1 = document.getElementById('hill1');
 let hill4 = document.getElementById('hill4');
@@ -12,6 +13,6 @@ window.addEventListener('scroll', () => {
     leaf.style.left = value * 1.5 + 'px';
     hill5.style.left = value * 1.5 + 'px';
     hill4.style.left = value * -1.5 + 'px';
-    // hill1.style.top = value * 1 + 'px';
+    hill1.style.top = value * 1 + 'px';
     hill1.style.top = value * 0.5 + 'px';
 });

@@ -13,16 +13,22 @@ class Header extends HTMLElement {
           <link rel="stylesheet" href="Stylesheets/mainmenu.css">
         </head>  
         <header>
-          <h2 class="logo">Chill Sandbox</h2>
+          <nav>
+            <div class="logo">
+              <a href="#"><img src="Images/SandboxLogo.png"
+            </div>
+          </nav> 
           <nav class="navigation">
               <a href="#" class="active">Home</a>
               <a href="clothsimulation.html">Cloth Simulation</a>
               <a href="about.html">About</a>
               <a href="">Source Code</a>
           </nav>
-        </header> 
+        </header>
       `;
     }
   }
   
   customElements.define('header-component', Header);
+
+  // <h2 class="logo">Chill Sandbox</h2>

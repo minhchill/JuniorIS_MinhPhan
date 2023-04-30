@@ -1,4 +1,4 @@
-# MuseumOfBanhMi
+# CAPTURING THE FEELING: A WEB-BASED PHYSICS SIMULATION
 
 Overview
 This project presents an interdisciplinary exploration of computer science, mathematics,
